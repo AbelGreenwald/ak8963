@@ -110,13 +110,13 @@ float AK8963::getZ() {
     return (_in_2_uT(val, 0x2));
 }
 
-//TODO: broken, will fix soon
-void setSPIconn(SPI *conn) {
+// Sets SPI connection Object manually
+void AK8963::setSPIconn(SPI *conn) {
     _connection = conn;
 }
 
-//TODO: broken, will fix soon
-void setSScon(DigitalOut *SS) {
+// Sets Signal Select Pin manually
+void AK8963::setSScon(DigitalOut *SS) {
     _SS = SS;
 }
 
