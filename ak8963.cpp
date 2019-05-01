@@ -160,7 +160,7 @@ void AK8963::reset() {
 // the contents to be written.  Lastly, deselects device by setting SS high.  
 // Note that the most signifigant bit in the initial write operation indicates a
 // subsiquent read or write (implicit 0 for write in this case).  
-// See http://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf to learn way to much about
+// See http://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf to learn way too much about
 // the SPI protocol.
 void AK8963::write(uint8_t regAddr, uint8_t regVal) {
     _SS->write(0);
@@ -174,7 +174,7 @@ void AK8963::write(uint8_t regAddr, uint8_t regVal) {
 // event.  Very lastly, deselects device by setting SS high.
 // Note that the most signifigant bit in the initial write operation indicates a
 // subsiquent read or write (explicit 1 for read in this case).  
-// See http://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf to learn way to much about
+// See http://www.ti.com/lit/ug/sprugp2a/sprugp2a.pdf way too much about
 // the SPI protocol.
 uint8_t AK8963::read(uint8_t regAddr) {
     _SS->write(0);
